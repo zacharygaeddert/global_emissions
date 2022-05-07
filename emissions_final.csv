@@ -1,0 +1,230 @@
+country,region,continent,level,lat,lon,ghg,source_year,population,ghgpc,coal,oil,ng,otherfos,nuclear,hydro,geothermal,pv,wind,otherren,other,total,missing
+Aruba,Caribbean,North America,country,12.51756625,-69.98186415,617,1987,61838,9.98,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Afghanistan,South Asia,Asia,country,33.7680065,66.2385139,98920,2018,37171922,2.66,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Angola,Sub-Saharan Africa,Africa,country,-11.8775768,17.5691241,79730,2018,30809787,2.59,0,0.29,0,0,0,0.71,0,0,0,0,0,1,0
+Albania,"Eastern Europe, Balkans, Caucasus",Europe,country,41.000028,19.9999619,10080,2018,2866376,3.52,0,0,0,0,0,1,0,0,0,0,0,1,0
+Andorra,Western Europe,Europe,country,42.5407167,1.5732033,540,1998,64140,8.42,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+United Arab Emirates,Middle East,Asia,country,24.0002488,53.9994829,263240,2018,9630966,27.33,0,0.01,0.98,0,0,0,0,0,0,0,0,1,0
+Argentina,South America,South America,country,-34.9964963,-64.9672817,365650,2018,44494502,8.22,0.02,0.08,0.57,0,0.04,0.27,0,0,0,0.01,0,1,0
+Armenia,"Eastern Europe, Balkans, Caucasus",Europe,country,40.7696272,44.6736646,9360,2018,2951741,3.17,0,0,0.37,0,0.34,0.29,0,0,0,0,0,1,0
+American Samoa,Oceania,Oceania,country,-14.2930755,-170.6847001,21,1989,45894,0.45,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Antigua and Barbuda,Caribbean,North America,country,17.2234721,-61.9554608,970,2008,85394,11.36,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Australia,Oceania,Oceania,country,-24.7761086,134.755,615380,2018,24982688,24.63,0.63,0.02,0.2,0,0,0.06,0,0.03,0.05,0.01,0,1,0
+Austria,Central Europe and Baltics,Europe,country,47.59397,14.12456,74980,2018,8840521,8.48,0.06,0.01,0.16,0,0,0.57,0,0.02,0.1,0.08,0,1,0
+Azerbaijan,"Eastern Europe, Balkans, Caucasus",Europe,country,40.3936294,47.7872508,80260,2018,9939771,8.07,0,0.05,0.86,0,0,0.07,0,0,0,0.01,0,1,0
+Burundi,Sub-Saharan Africa,Africa,country,-3.426449,29.9324519,5520,2018,11175379,0.49,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Belgium,Western Europe,Europe,country,50.6402809,4.6667145,108750,2018,11427054,9.52,0.03,0,0.27,0,0.49,0,0,0.04,0.08,0.08,0.01,1,0
+Benin,Sub-Saharan Africa,Africa,country,9.5293472,2.2584408,17380,2018,11485035,1.51,0,0.56,0.42,0,0,0,0,0.02,0,0,0,1,0
+Burkina Faso,Sub-Saharan Africa,Africa,country,12.0753083,-1.6880314,30850,2018,19751466,1.56,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Bangladesh,South Asia,Asia,country,24.4769288,90.2934413,198970,2018,161376713,1.23,0.01,0.18,0.79,0,0,0.01,0,0,0,0,0,1,0
+Bulgaria,"Eastern Europe, Balkans, Caucasus",Europe,country,42.6073975,25.4856617,53330,2018,7025037,7.59,0.47,0.01,0.04,0,0.35,0.06,0,0.03,0.03,0.01,0,1,0
+Bahrain,Middle East,Asia,country,26.1551249,50.5344606,48950,2018,1569440,31.19,0,0,1,0,0,0,0,0,0,0,0,1,0
+Bahamas,Caribbean,North America,country,24.7736546,-78.0000547,2440,2008,343680,7.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Bosnia and Herzegovina,"Eastern Europe, Balkans, Caucasus",Europe,country,44.3053476,17.5961467,27190,2018,3323929,8.18,0.75,0,0,0,0,0.24,0,0,0,0,0,1,0
+Belarus,"Eastern Europe, Balkans, Caucasus",Europe,country,53.4250605,27.6971358,88140,2018,9438785,9.34,0,0.01,0.97,0,0,0.01,0,0,0,0.01,0,1,0
+Belize,Central America,North America,country,16.8259793,-88.7600927,1560,2018,383071,4.07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Bermuda,Caribbean,North America,country,32.3018217,-64.7603583,577,1986,57382,10.06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Bolivia,South America,South America,country,-17.0568696,-64.9912286,56870,2018,11353140,5.01,0,0.02,0.72,0,0,0.22,0,0,0.01,0.03,0,1,0
+Brazil,South America,South America,country,-10.3333333,-53.2,1032640,2018,209469320,4.93,0.04,0.03,0.11,0,0.03,0.63,0,0,0.07,0.09,0,1,0
+Barbados,Caribbean,North America,country,13.1500331,-59.5250305,3790,2018,286640,13.22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Brunei Darussalam,Southeast Asia,Asia,country,4.4137155,114.5653908,16620,2018,428960,38.74,0,0.01,0.99,0,0,0,0,0,0,0,0,1,0
+Bhutan,South Asia,Asia,country,27.549511,90.5119273,2470,2018,754396,3.27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Botswana,Sub-Saharan Africa,Africa,country,-23.1681782,24.5928742,16120,2018,2254067,7.15,1,0,0,0,0,0,0,0,0,0,0,1,0
+Central African Republic,Sub-Saharan Africa,Africa,country,7.0323598,19.9981227,55680,2018,4666375,11.93,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Canada,North America,North America,country,61.0666922,-107.991707,724930,2018,37065178,19.56,0.09,0.01,0.09,0,0.15,0.6,0,0.01,0.04,0.01,0,1,0
+Switzerland,Central Europe and Baltics,Europe,country,46.7985624,8.2319736,46020,2018,8514329,5.41,0,0,0.01,0,0.34,0.57,0,0.03,0,0.05,0,1,0
+Chile,South America,South America,country,-31.7613365,-71.3187697,109590,2018,18729166,5.85,0.37,0.02,0.17,0,0,0.27,0,0.05,0.04,0.08,0,1,0
+China,East Asia,Asia,country,35.000074,104.999927,12355240,2018,1402760000,8.81,0.68,0,0.03,0,0.04,0.18,0,0.02,0.04,0.01,0,1,0
+Côte d'Ivoire,Sub-Saharan Africa,Africa,country,7.9897371,-5.5679458,22900,2018,25069226,0.91,0,0.01,0.83,0,0,0.15,0,0,0,0.02,0,1,0
+Cameroon,Sub-Saharan Africa,Africa,country,4.6125522,13.1535811,89050,2018,25216261,3.53,0,0.27,0.22,0,0,0.51,0,0,0,0,0,1,0
+Democratic Republic of the Congo,Sub-Saharan Africa,Africa,country,-2.9814344,23.8222636,58700,2018,84068092,0.7,0,0,0,0,0,1,0,0,0,0,0,1,0
+Republic of the Congo,Sub-Saharan Africa,Africa,country,-0.7264327,15.6419155,9370,2018,5244363,1.79,0,0.02,0.54,0,0,0.3,0,0.14,0,0,0,1,0
+Colombia,South America,South America,country,4.099917,-72.9088133,184100,2018,49661056,3.71,0.04,0.03,0.14,0,0,0.78,0,0,0,0.02,0,1,0
+Comoros,Sub-Saharan Africa,Africa,country,-12.2045176,44.2832964,590,2018,832322,0.71,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Cabo Verde,Sub-Saharan Africa,Africa,country,16.0000552,-24.0083947,830,2018,543764,1.53,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Costa Rica,Central America,North America,country,10.2735633,-84.0739102,15810,2018,4999443,3.16,0,0,0,0,0,0.77,0.1,0,0.11,0.02,0,1,0
+Cuba,Caribbean,North America,country,23.0131338,-80.8328748,41860,2018,11338146,3.69,0,0.59,0.14,0.24,0,0,0,0,0,0.03,0,1,0
+Cayman Islands,Caribbean,North America,country,19.70318225,-79.91746272,0,1985,19460, -   ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Cyprus,Middle East,Asia,country,34.9823018,33.1451285,8600,2018,1189262,7.23,0,0.91,0,0,0,0,0,0.03,0.04,0.01,0,1,0
+Czech Republic,Central Europe and Baltics,Europe,country,49.8167003,15.4749544,122840,2018,10629928,11.56,0.51,0,0.04,0,0.33,0.02,0,0.03,0.01,0.06,0,1,0
+Germany,Central Europe and Baltics,Europe,country,51.0834196,10.4234469,806090,2018,82905782,9.72,0.39,0.01,0.14,0,0.12,0.03,0,0.06,0.16,0.09,0,1,0
+Djibouti,Sub-Saharan Africa,Africa,country,11.8145966,42.8453061,1480,2018,958923,1.54,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Dominica,Caribbean,North America,country,19.0974031,-70.3028026,240,2018,71626,3.35,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Denmark,Nordic Countries,Europe,country,55.670249,10.3333283,45870,2018,5793636,7.92,0.2,0.01,0.06,0,0,0,0,0.02,0.48,0.23,0,1,0
+Dominican Republic,Caribbean,North America,country,19.0974031,-70.3028026,39060,2018,10627147,3.68,0.13,0.43,0.29,0,0,0.12,0,0.01,0.02,0.01,0,1,0
+Algeria,North Africa,Africa,country,28.0000272,2.9999825,218910,2018,42228415,5.18,0,0,0.99,0,0,0,0,0.01,0,0,0,1,0
+Ecuador,South America,South America,country,-1.3397668,-79.3666965,65680,2018,17084359,3.84,0,0.2,0.1,0,0,0.69,0,0,0,0.02,0,1,0
+Egypt,North Africa,Africa,country,26.2540493,29.2675469,329220,2018,98423602,3.34,0,0.13,0.78,0,0,0.07,0,0,0.01,0,0,1,0
+Eritrea,Sub-Saharan Africa,Africa,country,15.9500319,37.9999668,7480,2018,0,#DIV/0!,0,1,0,0,0,0,0,0,0,0,0,1,0
+Spain,Western Europe,Europe,country,39.3260685,-4.8379791,326940,2018,46797754,6.99,0.17,0.06,0.23,0,0.21,0.07,0,0.03,0.18,0.05,0,1,0
+Estonia,Central Europe and Baltics,Europe,country,58.7523778,25.3319078,18610,2018,1321977,14.08,0.06,0.01,0,0.78,0,0,0,0,0.06,0.09,0,1,0
+Ethiopia,Sub-Saharan Africa,Africa,country,10.2116702,38.6521203,172230,2018,109224410,1.58,0,0,0,0,0,0.93,0,0.01,0.06,0,0,1,0
+Finland,Nordic Countries,Europe,country,63.2467777,25.9209164,54490,2018,5515525,9.88,0.1,0,0.05,0.04,0.33,0.22,0,0,0.07,0.18,0.01,1,0
+Fiji,Oceania,Oceania,country,-18.1239696,179.0122737,2820,2018,883490,3.19,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+France,Western Europe,Europe,country,46.603354,1.8883335,423350,2018,67101930,6.31,0.03,0.01,0.07,0,0.72,0.09,0,0.02,0.04,0.02,0,1,0
+"Micronesia, Fed. Sts.",Oceania,Oceania,country,NA,NA,260,2017,111461,2.33,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Gabon,Sub-Saharan Africa,Africa,country,-0.8999695,11.6899699,7460,2018,2119275,3.52,0,0.09,0.51,0,0,0.39,0,0,0,0,0,1,0
+United Kingdom,Western Europe,Europe,country,54.7023545,-3.2765753,452080,2018,66460344,6.8,0.07,0,0.41,0,0.21,0.02,0,0.03,0.15,0.11,0,1,0
+Georgia,"Eastern Europe, Balkans, Caucasus",Europe,country,32.3293809,-83.1137366,16900,2018,3726549,4.54,0,0,0.19,0,0,0.8,0,0,0.01,0,0,1,0
+Ghana,Sub-Saharan Africa,Africa,country,8.0300284,-1.0800271,44500,2018,29767108,1.49,0,0,0.46,0.14,0,0.4,0,0,0,0,0,1,0
+Gibraltar,Western Europe,Europe,country,36.140807,-5.3541295,101,1980,30068,3.37,0,1,0,0,0,0,0,0,0,0,0,1,0
+Guinea,Sub-Saharan Africa,Africa,country,10.7226226,-10.7083587,28890,2018,12414292,2.33,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+The Gambia,Sub-Saharan Africa,Africa,country,13.470062,-15.4900464,2790,2018,2280092,1.22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Guinea-Bissau,Sub-Saharan Africa,Africa,country,12.100035,-14.9000214,2800,2018,1874304,1.49,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Equatorial Guinea,Sub-Saharan Africa,Africa,country,1.613172,10.5170357,19270,2018,1308966,14.72,0,0,0.68,0,0,0.32,0,0,0,0,0,1,0
+Greece,"Eastern Europe, Balkans, Caucasus",Europe,country,38.9953683,21.9877132,84750,2018,10732882,7.9,0.34,0.1,0.31,0,0,0.07,0,0.07,0.1,0.01,0,1,0
+Grenada,Caribbean,North America,country,12.1360374,-61.6904045,2360,2018,111449,21.18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Guatemala,Central America,North America,country,15.6871007,-90.12265453,35400,2018,16346950,2.17,0.26,0.03,0,0,0,0.45,0.02,0.02,0.02,0.19,0,1,0
+Guam,Oceania,Oceania,country,13.4501257,144.757551,60,1989,127525,0.47,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Guyana,South America,South America,country,4.8417097,-58.6416891,5040,2018,779007,6.47,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Hong Kong,East Asia,Asia,country,22.2793278,114.1628131,36449,1989,5686200,6.41,0.63,0.01,0.36,0,0,0,0,0,0,0,0,1,0
+Honduras,Central America,North America,country,15.2572432,-86.0755145,22400,2018,9587523,2.34,0.06,0.36,0,0,0,0.33,0.01,0.1,0.06,0.08,0,1,0
+Croatia,"Eastern Europe, Balkans, Caucasus",Europe,country,45.5643442,17.0118954,22550,2018,4087843,5.52,0.12,0.02,0.26,0,0,0.45,0,0.01,0.1,0.04,0,1,0
+Haiti,Caribbean,North America,country,19.1399952,-72.3570972,9930,2018,11123183,0.89,0,0.88,0,0,0,0.12,0,0,0,0,0,1,0
+Hungary,Central Europe and Baltics,Europe,country,47.1817585,19.5060937,60920,2018,9775564,6.23,0.16,0,0.24,0,0.49,0.01,0,0.01,0.02,0.07,0,1,0
+Indonesia,Southeast Asia,Asia,country,-2.4833826,117.8902853,969580,2018,267670549,3.62,0.58,0.08,0.22,0,0,0.07,0.05,0,0,0,0,1,0
+India,South Asia,Asia,country,22.3511148,78.6677428,3374990,2018,1352642283,2.5,0.74,0.02,0.05,0,0.03,0.09,0,0.02,0.03,0.03,0,1,0
+Ireland,Western Europe,Europe,country,52.865196,-7.9794599,65090,2018,4867316,13.37,0.12,0,0.51,0.07,0,0.02,0,0,0.24,0.03,0,1,0
+Iran,Middle East,Asia,country,32.6475314,54.5643516,828280,2018,81800204,10.13,0,0.09,0.84,0,0.02,0.05,0,0,0,0,0,1,0
+Iraq,Middle East,Asia,country,33.0955793,44.1749775,215690,2018,38433604,5.61,0,0.29,0.37,0.33,0,0.02,0,0,0,0,0,1,0
+Iceland,Nordic Countries,Europe,country,64.9841821,-18.1059013,3440,2018,352721,9.75,0,0,0,0,0,0.73,0.27,0,0,0,0,1,0
+Israel,Middle East,Asia,country,31.5313113,34.8667654,87830,2018,8882800,9.89,0.33,0.01,0.63,0,0,NA,0,0.02,0,0,0,1,0
+Italy,Central Europe and Baltics,Europe,country,42.6384261,12.674297,399600,2018,60421760,6.61,0.12,0.04,0.48,0,0,0.12,0.02,0.08,0.06,0.07,0,1,0
+Jamaica,Caribbean,North America,country,18.1850507,-77.3947693,9230,2016,2906242,3.18,0,0.74,0.09,0,0,0.04,0,0.01,0.07,0.06,0,1,0
+Jordan,Middle East,Asia,country,31.1667049,36.941628,35810,2018,9965322,3.59,0,0.13,0.8,0,0,0,0,0.04,0.02,0,0,1,0
+Japan,East Asia,Asia,country,36.5748441,139.2394179,1186770,2018,126529100,9.38,0.33,0.06,0.38,0.01,0.03,0.08,0,0.05,0.01,0.04,0.02,1,0
+Kazakhstan,Central Asia,Asia,country,47.2286086,65.2093197,274220,2018,18276452,15,0.69,0.01,0.19,0,0,0.11,0,0,0,0,0,1,0
+Kenya,Sub-Saharan Africa,Africa,country,1.4419683,38.4313975,78830,2018,51392570,1.53,0,0.2,0,0,0,0.31,0.47,0,0,0.01,0,1,0
+Kyrgyzstan,Central Asia,Asia,country,41.5089324,74.724091,18120,2018,6322800,2.87,0.07,0,0.01,0,0,0.92,0,0,0,0,0,1,0
+Cambodia,Southeast Asia,Asia,country,13.5066394,104.869423,37460,2018,16249795,2.31,0.56,0.04,0,0,0,0.39,0,0,0,0.01,0,1,0
+Kiribati,Oceania,Oceania,country,0.3448612,173.6641773,90,2008,98760,0.91,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+St. Kitts and Nevis,Caribbean,North America,country,17.250512,-62.6725973,370,2018,52438,7.06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+South Korea,East Asia,Asia,country,36.638392,127.6961188,718880,2018,51606633,13.93,0.45,0.02,0.22,0,0.26,0.01,0,0.01,0,0.01,0,1,0
+Kuwait,Middle East,Asia,country,29.2733964,47.4979476,112970,2018,4137314,27.31,0,0.66,0.34,0,0,0,0,0,0,0,0,1,0
+Laos,Southeast Asia,Asia,country,20.0171109,103.378253,29270,2018,7061498,4.15,0.35,0,0,0,0,0.65,0,0,0,0,0,1,0
+Lebanon,Middle East,Asia,country,33.8750629,35.843409,33790,2016,6714281,5.03,0,0.98,0,0,0,0.02,0,0,0,0,0,1,0
+Liberia,Sub-Saharan Africa,Africa,country,5.7499721,-9.3658524,9200,2018,4818976,1.91,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Libya,North Africa,Africa,country,26.8234472,18.1236723,103040,2018,6678565,15.43,0,0.38,0.62,0,0,0,0,0,0,0,0,1,0
+St. Lucia,Caribbean,North America,country,13.8250489,-60.975036,740,2018,181890,4.07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Liechtenstein,Central Europe and Baltics,Europe,country,47.1416307,9.5531527,260,1998,32306,8.05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Sri Lanka,South Asia,Asia,country,7.5554942,80.7137847,35240,2018,21670000,1.63,0.32,0.39,0,0,0,0.25,0,0.01,0.02,0,0,1,0
+Lesotho,Sub-Saharan Africa,Africa,country,-29.6039267,28.3350193,5850,2018,2108327,2.77,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Lithuania,Central Europe and Baltics,Europe,country,55.3500003,23.7499997,18840,2018,2801543,6.72,0,0.04,0.17,0,0,0.17,0,0.02,0.38,0.16,0.07,1,0
+Luxembourg,Western Europe,Europe,country,49.8158683,6.1296751,10220,2018,607950,16.81,0,0,0.25,0,0,0.1,0,0.12,0.26,0.28,0,1,0
+Latvia,Central Europe and Baltics,Europe,country,56.8406494,24.7537645,11660,2018,1927174,6.05,0,0,0.27,0,0,0.58,0,0,0.02,0.12,0,1,0
+"Macao SAR, China",East Asia,Asia,country,22.3103085,113.9398901,547,1981,243373,2.25,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Morocco,North Africa,Africa,country,31.1728205,-7.3362482,94290,2018,36029089,2.62,0.53,0.11,0.18,0,0,0.04,0,0,0.09,0.01,0.04,1,0
+Moldova,"Eastern Europe, Balkans, Caucasus",Europe,country,47.2879608,28.5670941,13180,2018,2708214,4.87,0,0,0.93,0,0,0.06,0,0,0,0,0,1,0
+Madagascar,Sub-Saharan Africa,Africa,country,-18.9249604,46.4416422,30570,2018,26262313,1.16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Maldives,South Asia,Asia,country,4.7064352,73.3287853,1390,2013,415592,3.34,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Mexico,North America,North America,country,23.6585116,-102.0077097,679880,2018,126190782,5.39,0.1,0.12,0.59,0,0.03,0.1,0.02,0,0.03,0.01,0,1,0
+Marshall Islands,Oceania,Oceania,country,8.9995549,168.0002575,220,2017,58053,3.79,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+North Macedonia,"Eastern Europe, Balkans, Caucasus",Europe,country,41.6171214,21.7168387,10510,2018,2076217,5.06,0.6,0.02,0.15,0,0,0.2,0,0,0.02,0.01,0,1,0
+Mali,Sub-Saharan Africa,Africa,country,16.3700359,-2.2900239,43740,2018,19077755,2.29,0,0.56,0,0,0,0.42,0,0,0,0.02,0,1,0
+Malta,Central Europe and Baltics,Europe,country,35.8885993,14.4476911,2040,2018,484630,4.21,0,0.12,0.78,0,0,0,0,0.09,0,0.01,0,1,0
+Myanmar,Southeast Asia,Asia,country,17.1750495,95.9999652,119650,2018,53708318,2.23,0.06,0,0.37,0,0,0.56,0,0,0,0,0,1,0
+Montenegro,"Eastern Europe, Balkans, Caucasus",Europe,country,42.9868853,19.5180992,2590,1998,607662,4.26,0.55,0,0,0,0,0.41,0,0,0.04,0,0,1,0
+Mongolia,East Asia,Asia,country,46.8250388,103.8499736,52620,2018,3170214,16.6,0.89,0.05,0,0,0,0.01,0,0,0.05,0,0,1,0
+Northern Mariana Islands,Oceania,Oceania,country,14.1490205,145.2134525,5,1989,43542,0.11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Mozambique,Sub-Saharan Africa,Africa,country,-19.302233,34.9144977,35040,2018,29496009,1.19,0,0,0.17,0,0,0.83,0,0,0,0,0,1,0
+Mauritania,Sub-Saharan Africa,Africa,country,20.2540382,-9.2399263,14080,2018,4403312,3.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Mauritius,Sub-Saharan Africa,Africa,country,-20.2759451,57.5703566,6740,2018,1265303,5.33,0.42,0.38,0,0,0,0.03,0,0.02,0,0.15,0,1,0
+Malawi,Sub-Saharan Africa,Africa,country,-13.2687204,33.9301963,18320,2018,18143215,1.01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Malaysia,Southeast Asia,Asia,country,4.5693754,102.2656823,306670,2018,31528033,9.73,0.44,0.01,0.38,0,0,0.16,0,0,0,0.01,0,1,0
+Namibia,Sub-Saharan Africa,Africa,country,-23.2335499,17.3231107,12890,2017,2402623,5.36,0.04,0,0,0,0,0.96,0,0,0,0,0,1,0
+New Caledonia,Oceania,Oceania,country,-21.3019905,165.4880773,0,1974,131000, -   ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Niger,Sub-Saharan Africa,Africa,country,17.7356214,9.3238432,45050,2018,22442831,2.01,0.41,0.58,0,0,0,0,0,0.01,0,0,0,1,0
+Nigeria,Sub-Saharan Africa,Africa,country,9.6000359,7.9999721,311450,2018,195874685,1.59,0,0,0.83,0,0,0.17,0,0,0,0,0,1,0
+Nicaragua,Central America,North America,country,12.6090157,-85.2936911,19070,2018,6465502,2.95,0,0.44,0,0,0,0.1,0.17,0,0.14,0.15,0,1,0
+Netherlands,Western Europe,Europe,country,52.2288689,5.3214503,178640,2018,17231624,10.37,0.29,0.01,0.51,0,0.03,0,0,0.02,0.09,0.05,0,1,0
+Norway,Nordic Countries,Europe,country,60.5000209,9.0999715,47340,2018,5311916,8.91,0,0,0.02,0,0,0.96,0,NA,0.02,0,0,1,0
+Nepal,South Asia,Asia,country,28.1083929,84.0917139,51240,2018,28095712,1.82,0,0,0,0,0,1,0,0,0,0,0,1,0
+Nauru,Oceania,Oceania,country,-0.5252306,166.9324426,110,1998,10567,10.41,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+New Zealand,Oceania,Oceania,country,-41.5000831,172.8344077,81330,2018,4900600,16.6,0.03,0,0.16,0,0,0.57,0.18,0,0.05,0.01,0,1,0
+Oman,Middle East,Asia,country,21.0000287,57.0036901,82300,2018,4829476,17.04,0,0.03,0.97,0,0,0,0,0,0,0,0,1,0
+Pakistan,South Asia,Asia,country,30.3308401,71.247499,431220,2018,212228288,2.03,0.08,0.22,0.37,0,0.08,0.21,0,0.01,0.02,0.01,0,1,0
+Panama,Central America,North America,country,8.559559,-81.1308434,18010,2018,4176868,4.31,0.02,0.27,0,0,0,0.66,0,0.01,0.04,0,0,1,0
+Peru,South America,South America,country,-6.8699697,-75.0458515,96280,2018,31989265,3.01,0.01,0.02,0.37,0,0,0.55,0,0.01,0.02,0.02,0,1,0
+Philippines,Southeast Asia,Asia,country,12.7503486,122.7312101,232340,2018,106651394,2.18,0.5,0.04,0.22,0,0,0.1,0.11,0.01,0.01,0.01,0,1,0
+Palau,Oceania,Oceania,country,5.3783537,132.9102573,220,1997,18016,12.21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Papua New Guinea,Oceania,Oceania,country,-5.6816069,144.2489081,22970,2018,8606324,2.67,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Poland,Central Europe and Baltics,Europe,country,52.215933,19.134422,389650,2018,37974750,10.26,0.78,0.01,0.06,0,0,0.02,0,0,0.09,0.04,0,1,0
+Puerto Rico,Caribbean,North America,country,18.2214149,-66.4132818,2858,1989,3505650,0.82,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+North Korea,East Asia,Asia,country,40.3736611,127.0870417,41910,2018,25549606,1.64,0.16,0.05,0,0,0,0.78,0,0,0,0,0,1,0
+Portugal,Western Europe,Europe,country,40.0332629,-7.8896263,66820,2018,10283822,6.5,0.25,0.02,0.33,0,0,0.1,0,0.02,0.21,0.06,0,1,0
+Paraguay,South America,South America,country,-23.3165935,-58.1693445,49170,2018,6956069,7.07,0,0,0,0,0,1,0,0,0,0,0,1,0
+French Polynesia,Oceania,Oceania,country,-16.03442485,-146.0490931,0,1979,148734, -   ,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Qatar,Middle East,Asia,country,25.3336984,51.2295295,99830,2018,2781682,35.89,0,0,1,0,0,0,0,0,0,0,0,1,0
+Romania,"Eastern Europe, Balkans, Caucasus",Europe,country,45.9852129,24.6859225,109010,2018,19473970,5.6,0.26,0.01,0.17,0,0.18,0.23,0,0.03,0.12,0.01,0,1,0
+Russian Federation,"Eastern Europe, Balkans, Caucasus",Europe,country,64.6863136,97.7453061,2543400,2018,144477859,17.6,0.16,0.01,0.47,0,0.19,0.17,0,0,0,0,0,1,0
+Rwanda,Sub-Saharan Africa,Africa,country,-1.9646631,30.0644358,6170,2018,12301969,0.5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Saudi Arabia,Middle East,Asia,country,25.6242618,42.3528328,585810,2013,30052058,19.49,0,0.12,0.64,0.24,0,0,0,0,0,0,0,1,0
+Sudan,Sub-Saharan Africa,Africa,country,14.5844444,29.4917691,109630,2018,41801532,2.62,0,0.23,0,0.17,0,0.6,0,0,0,0,0,1,0
+Senegal,Sub-Saharan Africa,Africa,country,14.4750607,-14.4529612,29990,2018,15854324,1.89,0,0.86,0.02,0,0,0.07,0,0.03,0,0.01,0.01,1,0
+Singapore,Southeast Asia,Asia,country,1.357107,103.8194992,49710,1998,3927213,12.66,0.01,0.01,0.95,0,0,0,0,0,0,0.03,0,1,0
+Solomon Islands,Oceania,Oceania,country,-8.7053941,159.1070694,940,2018,652856,1.44,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Sierra Leone,Sub-Saharan Africa,Africa,country,8.6400349,-11.8400269,7190,2018,7650149,0.94,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+El Salvador,Central America,North America,country,13.8000382,-88.9140683,12350,2018,6420740,1.92,0,0.26,0,0,0,0.3,0.29,0.03,0,0.13,0,1,0
+Somalia,Sub-Saharan Africa,Africa,country,8.3676771,49.083416,26970,2018,15008225,1.8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Serbia,"Eastern Europe, Balkans, Caucasus",Europe,country,44.1534121,20.55144,75600,1998,7567745,9.99,0.73,0,0.02,0,0,0.25,0,0,0,0,0,1,0
+South Sudan,Sub-Saharan Africa,Africa,country,7.8699431,29.6667897,46690,1998,5661934,8.25,0,0.99,0,0,0,0,0,0.01,0,0,0,1,0
+São Tomé and Principe,Sub-Saharan Africa,Africa,country,0.8875498,6.9648718,190,2018,211032,0.9,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Suriname,South America,South America,country,4.1413025,-56.0771187,3780,2018,575987,6.56,0,0.4,0,0,0,0.6,0,0,0,0,0,1,0
+Slovak Republic,Central Europe and Baltics,Europe,country,48.7411522,19.4528646,39930,2018,5446771,7.33,0.13,0.02,0.06,0,0.55,0.16,0,0.02,0,0.06,0.01,1,0
+Slovenia,Central Europe and Baltics,Europe,country,45.8133113,14.4808369,17170,2018,2073894,8.28,0.3,0,0.03,0,0.39,0.24,0,0.02,0,0.02,0,1,0
+Sweden,Nordic Countries,Europe,country,59.6749712,14.5208584,46350,2018,10175214,4.56,0.01,0,0,0,0.4,0.4,0,0,0.11,0.08,0,1,0
+Eswatini,Sub-Saharan Africa,Africa,country,-26.5624806,31.3991317,3120,2018,1136274,2.75,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Seychelles,Sub-Saharan Africa,Africa,country,-4.6574977,55.4540146,780,2018,96762,8.06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Syrian Arab Republic,Middle East,Asia,country,34.6401861,39.0494106,47540,2017,17095669,2.78,0,0.38,0.58,0,0,0.04,0,0,0,0,0,1,0
+Turks and Caicos Islands,Caribbean,North America,country,21.7214683,-71.6201783,2,1989,11550,0.2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Chad,Sub-Saharan Africa,Africa,country,15.6134137,19.0156172,80680,2018,15477727,5.21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Togo,Sub-Saharan Africa,Africa,country,8.7800265,1.0199765,8420,2018,7889095,1.07,0,0.09,0,0,0,0.88,0,0,0,0.02,0,1,0
+Thailand,Southeast Asia,Asia,country,14.8971921,100.83273,416950,2018,69428454,6.01,0.19,0,0.64,0,0,0.05,0,0.02,0.01,0.08,0,1,0
+Tajikistan,Central Asia,Asia,country,38.6281733,70.8156541,15210,2018,9100847,1.67,0.05,0,0,0,0,0.95,0,0,0,0,0,1,0
+Turkmenistan,Central Asia,Asia,country,39.3763807,59.3924609,125080,2018,5850902,21.38,0,0,1,0,0,0,0,0,0,0,0,1,0
+Timor-Leste,Southeast Asia,Asia,country,-8.5151979,125.8375756,6190,2018,1267975,4.88,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Tonga,Oceania,Oceania,country,-19.9160819,-175.202642,350,2018,103199,3.39,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Trinidad and Tobago,Caribbean,North America,country,10.8677845,-60.9821067,15970,2000,1267159,12.6,0,0,1,0,0,0,0,0,0,0,0,1,0
+Tunisia,North Africa,Africa,country,33.8439408,9.400138,41100,2018,11565203,3.55,0,0,0.96,0,0,0,0,0.01,0.02,0,0.01,1,0
+Turkey,Middle East,Asia,country,38.9597594,34.9249653,502520,2018,82340090,6.1,0.33,0,0.37,0,0,0.2,0.02,0.01,0.06,0.01,0,1,0
+Tuvalu,Oceania,Oceania,country,-8.6405212,179.1582918,30,2018,11505,2.61,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Tanzania,Sub-Saharan Africa,Africa,country,-6.5247123,35.7878438,105380,2018,56313444,1.87,0,0.17,0.53,0,0,0.29,0,0,0,0,0,1,0
+Uganda,Sub-Saharan Africa,Africa,country,1.5333554,32.2166578,54870,2018,42729032,1.28,0,0.06,0,0,0,0.83,0,0.01,0,0.1,0,1,0
+Ukraine,"Eastern Europe, Balkans, Caucasus",Europe,country,49.4871968,31.2718321,274510,2018,44622518,6.15,0.32,0.01,0.05,0,0.55,0.06,0,0,0.01,0,0,1,0
+Uruguay,South America,South America,country,-32.8755548,-56.0201525,36160,2018,3449290,10.48,0,0.01,0,0,0,0.55,0,0.02,0.28,0.14,0,1,0
+United States,North America,North America,country,39.7837304,-100.445882,6023620,2018,326838199,18.43,0.31,0.01,0.31,0,0.2,0.07,0,0.02,0.06,0.02,0,1,0
+Uzbekistan,Central Asia,Asia,country,41.32373,63.9528098,235510,2018,32956100,7.15,0.04,0,0.82,0,0,0.14,0,0,0,0,0,1,0
+St. Vincent and the Grenadines,Caribbean,North America,country,12.90447,-61.2765569,370,2018,110210,3.36,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Venezuela,South America,North America,country,8.0018709,-66.1109318,233920,2018,28887117,8.1,0,0.13,0.26,0,0,0.61,0,0,0,0,0,1,0
+British Virgin Islands,Caribbean,North America,country,18.4024395,-64.5661642,72,1988,16155,4.47,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Virgin Islands (U.S.),Caribbean,North America,country,17.7289564,-64.75901598,45,1989,101041,0.44,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Vietnam,Southeast Asia,Asia,country,13.2904027,108.4265113,376530,2018,95545959,3.94,0.34,0,0.21,0,0,0.45,0,0,0,0,0,1,0
+Vanuatu,Oceania,Oceania,country,-16.5255069,168.1069154,870,2018,292675,2.97,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Samoa,Oceania,Oceania,country,-13.7693895,-172.12005,690,2018,196128,3.52,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1
+Yemen,Middle East,Asia,country,16.3471243,47.8915271,21760,2018,28498683,0.76,0,0.51,0.36,0,0,0,0,0.14,0,0,0,1,0
+South Africa,Sub-Saharan Africa,Africa,country,-28.8166236,24.991639,503110,2012,52832659,9.52,0.9,0,0,0,0.06,0,0,0.01,0.02,0,0,1,0
+Zambia,Sub-Saharan Africa,Africa,country,-14.5189121,27.5589884,40670,2018,17351714,2.34,0.09,0.05,0,0,0,0.86,0,0,0,0,0,1,0
+Zimbabwe,Sub-Saharan Africa,Africa,country,-18.4554963,29.7468414,31380,2018,14438812,2.17,0.45,0.01,0,0,0,0.53,0,0,0,0.02,0,1,0
+Oceania,Oceania,Oceania,region,-18.3128,138.5156,726365,NA,41423017,17.54,0.54,0.02,0.19,0,0,0.14,0.03,0.03,0.05,0.01,0,1,0
+Southeast Asia,Southeast Asia,Asia,region,6.200528638,111.9316316,2560970,NA,653468148,3.92,0.38,0.03,0.36,0,0,0.18,0.02,0.01,0,0.02,0,1,0
+East Asia,East Asia,Asia,region,35.94157297,108.1617286,14392416,NA,1615545126,8.91,0.62,0.01,0.09,0,0.05,0.15,0,0.02,0.04,0.02,0,1,0
+"Eastern Europe, Balkans, Caucasus","Eastern Europe, Balkans, Caucasus",Europe,region,46.95326225,32.53378389,3421360,NA,275627098,12.41,0.21,0.01,0.4,0,0.2,0.16,0,0.01,0.01,0,0,1,0
+Western Europe,Western Europe,Europe,region,45.91837537,-1.554999307,1632531,NA,224872002,7.26,0.1,0.02,0.25,0,0.39,0.06,0,0.02,0.11,0.05,0,1,0
+Central Europe and Baltics,Central Europe and Baltics,Europe,region,50.40488931,15.84475111,2008610,NA,233150929,8.62,0.34,0.01,0.19,0.01,0.11,0.1,0,0.05,0.1,0.08,0,1,0
+Middle East,Middle East,Asia,region,31.42122012,47.78259843,2974920,NA,327920851,9.07,0.08,0.12,0.64,0.07,0.01,0.05,0,0,0.01,0,0,1,0
+Nordic Countries,Nordic Countries,Europe,region,61.3291098,16.48137439,197490,NA,27149012,7.27,0.03,0,0.02,0.01,0.2,0.55,0.01,0,0.09,0.08,0,1,0
+North America,North America,North America,region,51.0000002,-109,7428430,NA,490094159,15.16,0.27,0.01,0.3,0,0.18,0.14,0,0.01,0.06,0.02,0,1,0
+Central Asia,Central Asia,Asia,region,39.4009215,72.8676621,668140,NA,72507101,9.21,0.34,0,0.42,0,0,0.23,0,0,0,0,0,1,0
+Caribbean,Caribbean,North America,region,18.4,-75,131502,NA,42278280,3.11,0.04,0.44,0.35,0.09,0,0.05,0,0,0.01,0.02,0,1,0
+South America,South America,South America,region,-21.0002179,-61.0006565,2238880,NA,423428278,5.29,0.05,0.05,0.2,0,0.02,0.58,0,0,0.04,0.06,0,1,0
+Central America,Central America,North America,region,13.19631924,-87.06188084,124600,NA,48380097,2.58,0.08,0.19,0,0,0,0.49,0.07,0.03,0.06,0.09,0,1,0
+North Africa,North Africa,Africa,region,30.39814988,9.698685617,786560,NA,194924874,4.04,0.05,0.12,0.76,0,0,0.04,0,0,0.02,0,0,1,0
+Sub-Saharan Africa,Sub-Saharan Africa,Africa,region,-2.897330082,26.62074812,2340620,NA,1065506110,2.2,0.52,0.05,0.12,0.01,0.03,0.23,0.01,0.01,0.01,0.01,0,1,0
+South Asia,South Asia,Asia,region,25.57231535,80.91765645,4194440,NA,1814354906,2.31,0.65,0.04,0.1,0,0.03,0.1,0,0.02,0.03,0.03,0,1,0
+Asia,NA,Asia,continent,51.2086975,89.2343748,24790886,NA,4483796132,5.53,0.3,0.03,0.34,0,0.14,0.1,0.01,0.02,0.04,0.02,0,1,0
+Europe,NA,Europe,continent,51,10,7259991,NA,760799041,9.54,0.4,0.03,0.19,0.01,0.08,0.19,0,0.02,0.06,0.03,0,1,0
+North America,NA,North America,continent,33.28968209,-95.49168961,7918452,NA,609639653,12.99,0.15,0.07,0.3,0,0.02,0.32,0,0.02,0.06,0.06,0,1,0
+South America,NA,South America,continent,-21.0002179,-61.0006565,2004960,NA,394541161,5.08,0.13,0.02,0.48,0,0.21,0.12,0,0.01,0.03,0.01,0,1,0
+Africa,NA,Africa,continent,11.5024338,17.7578122,3127180,NA,1260430984,2.48,0.53,0.02,0.13,0.01,0.06,0.16,0,0.02,0.04,0.02,0,1,0
+Oceania,NA,Oceania,continent,-18.3128,138.5156,726365,NA,41423017,17.54,0.54,0.02,0.19,0,0,0.14,0.03,0.03,0.05,0.01,0,1,0
+World,World,World,world,0,0,45827834,NA,7550629988,6.07,0.38,0.03,0.23,0.01,0.1,0.16,0,0.02,0.04,0.02,0,1,0
