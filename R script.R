@@ -87,7 +87,8 @@ ui<-fluidPage(
   ),
   
   fluidRow(
-    column(12,div(style = "height:25px;background-color: white;"))),
+    column(12,div(style = "height:25px;background-color: white;"),
+           htmlOutput("instructions"))),
   
   fluidRow(
     column(3, h4('Per capita intensity benchmarking', align = 'center'),
@@ -269,6 +270,10 @@ server <- shinyServer(function(input, output) {
     paste("<font size = 1> <i>", "* GHG totals may be slightly different due to different data sources", "</i> </font>")
   })
   
+  output$instructions <- renderText({
+    paste("<center> <i> <font size = 1> Hover your mouse over the charts below to see detailed statistics for the selected country </font> </i>")
+  })
+  
   # electricity
   output$electricity <- renderHighchart({
     p <- input$map_shape_click
@@ -387,7 +392,7 @@ server <- shinyServer(function(input, output) {
                                          <a href="https://www.iea.org/reports/world-energy-balances-overview">The International Energy Agency</a> (for electricity grid mix),
                                          <a href="https://ourworldindata.org/emissions-by-sector#annual-greenhouse-gas-emissions-by-sector">CAIT Climate Data Explorer </a> (for sectoral emissions breakdown),
                                          <a href="https://data.worldbank.org/">World Bank Open Data </a> (for demographic data).<br>
-                                         Code: <a href="https://github.com/zacharygaeddert/global_emissions">GitHub</a>. <br>
+                                         Code: <a href="https://github.com/zacharygaeddert/global_emissions">GitHub</a>. Massive thank you to <a href="http://vrl.cs.brown.edu/color">Colorgorical </a> from Brown University for the colour palette, too. <br>
                   <i> Temporary user note: it is still unclear to me why Leaflet is not rendering circle sizes proportionally; e.g., India is smaller than Russia despite having a greater quantity of emissions.'))
   })
 })
