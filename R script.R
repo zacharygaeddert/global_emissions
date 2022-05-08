@@ -64,7 +64,7 @@ ui<-fluidPage(
          color: #074d65;", "Global Greenhouse Gas Emissions"),
   br(),br(),
   fluidRow(
-    column(7, h6('Zoom in and click a country to see detailed GHG statistics', align = 'center'),
+    column(7, htmlOutput("instructions_1"),
            leafletOutput("map", height = "400px") %>% withSpinner(color="#0dc5c1")),
     column(5,
            br(),
@@ -88,7 +88,7 @@ ui<-fluidPage(
   
   fluidRow(
     column(12,div(style = "height:25px;background-color: white;"),
-           htmlOutput("instructions"))),
+           htmlOutput("instructions_2"))),
   
   fluidRow(
     column(3, h4('Per capita intensity benchmarking', align = 'center'),
@@ -270,8 +270,12 @@ server <- shinyServer(function(input, output) {
     paste("<font size = 1> <i>", "* GHG totals may be slightly different due to different data sources", "</i> </font>")
   })
   
-  output$instructions <- renderText({
-    paste("<center> <i> <font size = 1> Hover your mouse over the charts below to see detailed statistics for the selected country </font> </i>")
+  output$instructions_1 <- renderText({
+    paste("<center> <i> <font size = 2> Zoom in and click a country to see detailed GHG statistics </font> </i>")
+  })
+  
+  output$instructions_2 <- renderText({
+    paste("<center> <i> <font size = 2> Hover your mouse over the charts below to see detailed statistics for the selected country </font> </i>")
   })
   
   # electricity
