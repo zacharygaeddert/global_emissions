@@ -1,6 +1,4 @@
 library(tidyverse)
-library(tmap)
-library(tmaptools)
 library(leaflet)
 library(htmltools)
 library(shiny)
@@ -9,10 +7,10 @@ library(shinycssloaders)
 library(highcharter)
 library(scales)
 
-emissions <- read.csv('emissions_final.csv') %>% 
-  select(-total, -missing)
+emissions <- read.csv('emissions_final_2.csv') # %>% 
+ # select(-total, -missing)
 
-emissions$sqrt <- sqrt(emissions$ghg)
+emissions$sqrt <- emissions$ghg^(1/1.5)
 
 emissions <- emissions %>% 
   group_by(level) %>% 
@@ -22,51 +20,37 @@ emissions <- emissions %>%
   arrange(desc(ghg_pc)) %>% 
   mutate(rank_int = order(as.numeric(ghg_pc), decreasing = T)) 
 
-varnames <- c('coal', 'oil', 'ng', 'otherfos', 'nuclear', 'hydro', 'geothermal', 'pv', 'wind', 'otherren', 'other')
-varreplace <- c('Coal', 'Oil', 'Natural gas', 'Other fossil fuels',
-                'Nuclear', 'Hydro', 'Geothermal', 'Solar PV', 'Wind',
-                'Other renewables', 'Other')
-
-# hc test 2 --------------------------------------------------------------------
-
-selected <- subset(emissions, country == "Germany"|country == emissions$region[emissions$country == "Germany"]|country == 'World') %>% 
-  filter(level != 'continent') %>% 
-  mutate(pal = as.factor(case_when(
-    level == 'country' ~ "#96e97c", 
-    level == 'region' ~ "#074d65", 
-    level == 'world' ~ "#6ad5eb")),
-    arranges = case_when(
-      level == 'country' ~ 1,
-      level == 'region' ~ 2,
-      level == 'world' ~ 3)) %>% 
-  arrange(arranges)
-
-selectedtwo <- subset(emissions, country == "United Kingdom"|country == emissions$region[emissions$country == "United Kingdom"]|country == 'World') %>% 
-  filter(level != 'continent') %>% 
-  mutate(pal = as.factor(case_when(
-    level == 'country' ~ "#96e97c", 
-    level == 'region' ~ "#074d65", 
-    level == 'world' ~ "#6ad5eb")),
-    arranges = case_when(
-      level == 'country' ~ 1,
-      level == 'region' ~ 2,
-      level == 'world' ~ 3)) %>% 
-  arrange(arranges)
-
-selected <- rbind(selected, selectedtwo)
-
-# Create map ----------------------------------------------------------------
+# Create maps ------------------------------------------------------------------
 
 map_country <- filter(emissions, level == 'country') 
 
-# Create palettes ----------------------------------------------------------------
+# Create palletes and variable name lists --------------------------------------
+
+## Electricity mix 
 
 pal_full <- c("#96e97c", "#074d65", "#6ad5eb", "#528e8c", "#cddb9b", "#57449b",
               "#9fa8e1", "#760796", "#ee80fe", "#598322", "#e08761")
 
 pal <- c("#96e97c", "#074d65", "#6ad5eb")
 
+varnames <- c('coal', 'oil', 'ng', 'otherfos', 'nuclear', 'hydro', 'geothermal', 'pv', 'wind', 'otherren', 'other')
+varreplace <- c('Coal', 'Oil', 'Natural gas', 'Other fossil fuels',
+                'Nuclear', 'Hydro', 'Geothermal', 'Solar PV', 'Wind',
+                'Other renewables', 'Other')
+
 join <- data.frame(mix = varreplace, color = pal_full)
+
+# Sector share
+
+sector_names <- c("Agriculture", "Land use change and forestry", "Waste", "Industry",
+                  "Manufacturing and construction", "Transport", "Electricity and heat",
+                  "Buildings", "Fugitive emissions", "Other fuel combustion", "Aviation and shipping")
+
+sector_replace_2016 <- colnames(emissions[22:32])
+sector_replace_2017 <- colnames(emissions[33:43])
+sector_replace_2018 <- colnames(emissions[44:54])
+
+join_sector <- data.frame(sector = sector_names, color = pal_full)
 
 # Shiny code -------------------------------------------------------------------
 
@@ -80,9 +64,9 @@ ui<-fluidPage(
          color: #074d65;", "Global Greenhouse Gas Emissions"),
   br(),br(),
   fluidRow(
-    column(8, h6('Click a country, region, or continent to see detailed GHG statistics', align = 'center'),
+    column(7, h6('Zoom in and click a country to see detailed GHG statistics', align = 'center'),
            leafletOutput("map", height = "400px") %>% withSpinner(color="#0dc5c1")),
-    column(4,
+    column(5,
            br(),
            br(),
            br(),
@@ -101,13 +85,21 @@ ui<-fluidPage(
            
     )
   ),
+  
   fluidRow(
-    column(6, h4('Electricity generation mix', align = 'left'),
-           highchartOutput("electricity", width = "100%", height = "350px")%>% 
+    column(12,div(style = "height:25px;background-color: white;"))),
+  
+  fluidRow(
+    column(3, h4('Per capita intensity benchmarking', align = 'center'),
+           highchartOutput("intensity", width = "100%", height = "400px")%>% 
              withSpinner(color="#0dc5c1")),
-    column(6, h4('Per capita intensity benchmarking', align = 'left'),
-           highchartOutput("intensity", width = "100%", height = "350px")%>% 
-             withSpinner(color="#0dc5c1"))
+    column(6, h4('Electricity generation mix', align = 'center'),
+           highchartOutput("electricity", width = "100%", height = "400px")%>% 
+             withSpinner(color="#0dc5c1")),
+    column(3, h4('Emissions by sector*', align = 'center'),
+           highchartOutput("sector", width = "100%", height = "400px")%>% 
+             withSpinner(color="#0dc5c1"),
+          htmlOutput("note"))
   ),
   fluidRow(column(12, align = 'center', uiOutput('notes')))
 )
@@ -121,19 +113,24 @@ server <- shinyServer(function(input, output) {
   output$map <- renderLeaflet({
     
     labels <- sprintf("<strong>%s</strong><br/> Total Emissions:<br/> %s kt CO<sub>2</sub>e",
-                      map_country$country, scales::comma(map_country$ghg)) %>% 
+                      map_country$name, scales::comma(map_country$ghg)) %>% 
       lapply(HTML)
     
     leaflet() %>% 
       addTiles(urlTemplate = "", attribution = '<a href="https://leafletjs.com/">Leaflet</a>') %>% 
       addProviderTiles("Esri.WorldImagery") %>%
-      addCircles(data = map_country, lng = ~lon, lat = ~lat, layerId = ~country,
-                 radius = ~ghg/6, #CHANGE TO SQRT VALUES
+      addCircles(data = map_country, lng = ~lon, lat = ~lat, layerId = ~name,
+                 radius = ~sqrt*24.5, #makes small countries visible without China being overwhelming
                  weight = 1,
                  #  fill = TRUE,
+                 color = "black",
+                 fillColor = "#ee80fe",
+                 opacity = 1,
                  fillOpacity = 0.5,
-                 color = "#96e97c",
-                 opacity = 0.7,
+                 stroke = TRUE,
+                 highlightOptions = highlightOptions(color = '#ffffff',
+                                                     weight = 2.5,
+                                                     bringToFront = T),
                  label = labels,
                  labelOptions = labelOptions(
                    style = list("font-weight" = "normal", padding = "3px 8px"),
@@ -142,8 +139,36 @@ server <- shinyServer(function(input, output) {
                    opacity = 0.75)) %>% 
       setView(lat = 0, lng = 0, zoom = 2)
   })
+
+# Change colour of marker when clicked and zoom
   
-  # observe the marker click info and print to console when it is changed.
+  observeEvent(input$map_shape_click, {
+    p <- input$map_shape_click
+    selected <- subset(emissions, name == p$id)
+    
+    print(p)
+    
+    proxy <- leafletProxy("map")
+    
+    if(p$id == "Selected"){
+      proxy %>% removeShape(layerId = "Selected")
+    } else {
+      proxy %>%
+        addCircles(data = selected, lng = ~lon, lat = ~lat, layerId = "Selected",
+                   radius = ~sqrt*24.5, #makes small countries visible without China being overwhelming
+                   weight = 1,
+                   #  fill = TRUE,
+                   color = "black",
+                   fillColor = "#6ad5eb",
+                   opacity = 1,
+                   fillOpacity = 0.5,
+                   stroke = TRUE,
+                   highlightOptions = highlightOptions(color = '#ffffff',
+                                                       weight = 2.5,
+                                                       bringToFront = T)) %>% 
+        setView(lat = p$lat, lng = p$lng, zoom = 4)
+    }
+  })
   
   
   # text
@@ -151,13 +176,13 @@ server <- shinyServer(function(input, output) {
     p <- input$map_shape_click
     
     if (is.null(p)) {
-      selected <- subset(emissions, country == 'World')
+      selected <- subset(emissions, name == 'World')
     } else {
-      selected <- subset(emissions, country == p$id)
+      selected <- subset(emissions, name == p$id)
     }
     
     paste( 
-      "<center> <font size = 6> <strong> <span style = \'font-weight: 500;\'> ", selected$country, "</span> </strong> </font>
+      "<center> <font size = 6> <strong> <span style = \'font-weight: 500;\'> ", selected$name, "</span> </strong> </font>
           <br>"
     )
   })
@@ -166,9 +191,9 @@ server <- shinyServer(function(input, output) {
     p <- input$map_shape_click
     
     if (is.null(p)) {
-      selected <- subset(emissions, country == 'World')
+      selected <- subset(emissions, name == 'World')
     } else {
-      selected <- subset(emissions, country == p$id)
+      selected <- subset(emissions, name == p$id)
     }    
     
     paste("<center> <font size = 3>", "Total emissions: ", "</font>", 
@@ -179,11 +204,11 @@ server <- shinyServer(function(input, output) {
     p <- input$map_shape_click
     
     if (is.null(p)) {
-      output_text <- paste("<center> <font size = 3> Country intensity rank: </font>",
+      output_text <- paste("<center> <font size = 3> Country rank: </font>",
                            "<font size = 5> <font color = #808080> <b> NA </b> </font>")
     } else {
-      selected <- subset(emissions, country == p$id)
-      tot <- emissions %>% filter(level == selected$level[selected$country == p$id])
+      selected <- subset(emissions, name == p$id)
+      tot <- emissions %>% filter(level == selected$level[selected$name == p$id])
       output_text <- paste("<center> <font size = 3>", str_to_title(selected$level), " rank: ", "</font>", 
           "<font size = 5> <font color = #074d65> <b>", selected$rank, "</b> </font>", 
           "<font size = 3>", " of ", "</font>",
@@ -196,13 +221,13 @@ server <- shinyServer(function(input, output) {
   output$ghg_pc <- renderText({
     p <- input$map_shape_click
     if (is.null(p)) {
-      selected <- subset(emissions, country == 'World')
+      selected <- subset(emissions, name == 'World')
     } else {
-      selected <- subset(emissions, country == p$id)
+      selected <- subset(emissions, name == p$id)
     }    
     
     paste("<center> <font size = 3>", "Emissions per capita: ", "</font>",
-          "<font size = 5> <font color = #074d65> <b>", selected$ghgpc, " kT CO<sub>2</sub>e", "</b> </font>")
+          "<font size = 5> <font color = #074d65> <b>", selected$ghgpc, " tCO<sub>2</sub>e", "</b> </font>")
   })
   
   output$rank_int <- renderText({
@@ -212,8 +237,8 @@ server <- shinyServer(function(input, output) {
       output_text <- paste("<center> <font size = 3> Country intensity rank: </font>",
                            "<font size = 5> <font color = #808080> <b> NA </b> </font>")
     } else {
-      selected <- subset(emissions, country == p$id)
-      tot <- emissions %>% filter(level == selected$level[selected$country == p$id])
+      selected <- subset(emissions, name == p$id)
+      tot <- emissions %>% filter(level == selected$level[selected$name == p$id])
       
       output_text <- paste("<center> <font size = 3>", str_to_title(selected$level), " intensity rank: ", "</font>", 
           "<font size = 5> <font color = #074d65> <b>", selected$rank_int, "</b> </font>", 
@@ -231,7 +256,7 @@ server <- shinyServer(function(input, output) {
     if (is.null(p)) {
       output_text <- paste("<center> <i> These are global totals. Click a country to see detailed statistics</i>")
     } else {
-      selected <- subset(emissions, country == p$id)
+      selected <- subset(emissions, name == p$id)
       output_text <- paste("<center> <font size = 3>", "Emissions source year: ", "</font>",
             "<font size = 5> <font color = #074d65> <b>", selected$source_year, "</b> </font>")
     }
@@ -240,14 +265,18 @@ server <- shinyServer(function(input, output) {
     
   })
   
+  output$note <- renderText({
+    paste("<font size = 1> <i>", "* GHG totals may be slightly different due to different data sources", "</i> </font>")
+  })
+  
   # electricity
   output$electricity <- renderHighchart({
     p <- input$map_shape_click
     
     if (is.null(p)) {
-      selected <- subset(emissions, country == 'World')
+      selected <- subset(emissions, name == 'World')
     } else {
-      selected <- subset(emissions, country == p$id)
+      selected <- subset(emissions, name == p$id)
     }    
     
     selected %>%
@@ -267,18 +296,18 @@ server <- shinyServer(function(input, output) {
     p <- input$map_shape_click
 
     if (is.null(p)) {
-      selected <- subset(emissions, country == 'World') %>% 
+      selected <- subset(emissions, name == 'World') %>% 
         mutate(pal = "#074d65")
       
       highchart_output <- selected %>% 
         filter(level != 'continent') %>% 
-        mutate(country = str_to_title(country)) %>%
-        hchart(pointWidth = 50, 'column', hcaes(x = country, y = as.numeric(ghgpc), color = pal), name = 'GHG per capita') %>% 
+        mutate(country = str_to_title(name)) %>%
+        hchart(pointWidth = 75, 'column', hcaes(x = country, y = as.numeric(ghgpc), color = pal), name = 'GHG per capita') %>% 
         hc_xAxis(title = list(text = "")) %>% 
         hc_yAxis(title = list(text = "GHG per capita (tCO<sub>2</sub>e)"))
       
     } else {
-      selected <- subset(emissions, country == p$id|country == emissions$region[emissions$country == p$id]|country == 'World') %>% 
+      selected <- subset(emissions, name == p$id|name == emissions$region[emissions$name == p$id]|name == 'World') %>% 
         filter(level != 'continent') %>% 
         mutate(pal = as.factor(case_when(
                  level == 'country' ~ "#96e97c", 
@@ -292,12 +321,13 @@ server <- shinyServer(function(input, output) {
       
       highchart_output <- selected %>% 
         filter(level != 'continent') %>% 
+        mutate(country = str_to_title(name)) %>% 
         hchart('column', hcaes(x = country, y = as.numeric(ghgpc), color = pal), name = 'GHG per capita') %>% 
         hc_xAxis(
           title = list(text = ""),
           categories = list(
-            str_to_title(selected$country[selected$country == p$id]),
-            str_to_title(selected$region[selected$country == p$id]),
+            str_to_title(selected$name[selected$name == p$id]),
+            str_to_title(selected$region[selected$name == p$id]),
             "World")) %>% 
         hc_yAxis(title = list(text = "GHG per capita (tCO<sub>2</sub>e)"))
       
@@ -307,10 +337,58 @@ server <- shinyServer(function(input, output) {
 
   })
   
+  # Sector
+  
+  output$sector <- renderHighchart({
+    p <- input$map_shape_click
+    
+    if (is.null(p)) {
+      selected <- subset(emissions, name == 'World') 
+      
+    } else {
+      selected <- subset(emissions, name == p$id)
+    }
+  
+  sector_2016 <- selected[,c(1, 22:32)]
+  sector_2017 <- selected[,c(1, 33:43)]
+  sector_2018 <- selected[,c(1, 44:54)]
+  
+  sector_2016 <- sector_2016 %>% 
+    mutate(group = 2016) %>% 
+    rename_at(vars(sector_replace_2016), ~sector_names) %>% 
+    pivot_longer(cols = sector_names, names_to = "sector")
+  
+  sector_2017 <- sector_2017 %>% 
+    mutate(group = 2017) %>% 
+    rename_at(vars(sector_replace_2017), ~sector_names) %>% 
+    pivot_longer(cols = sector_names, names_to = "sector")
+  
+  sector_2018 <- sector_2018 %>% 
+    mutate(group = 2018) %>% 
+    rename_at(vars(sector_replace_2018), ~sector_names) %>% 
+    pivot_longer(cols = sector_names, names_to = "sector")
+  
+  sector <- rbind(sector_2016, sector_2017, sector_2018) %>% 
+    left_join(join_sector, by = 'sector')%>% 
+    mutate(value = value/1000)
+  
+  sector %>% 
+    hchart('column', hcaes(x = group, y = value, group = sector, color = color)) %>% 
+    hc_plotOptions(series = list(stacking = "normal")) %>% 
+    hc_xAxis(title = list(text = "")) %>% 
+    hc_yAxis(title = list(text = "Total sectoral GHG (kTCO<sub>2</sub>e)")) %>% 
+    hc_legend(enabled = FALSE)
+  
+  })
+  
   output$notes <- renderUI({
     HTML(str_glue('Created with love by Zachary Gaeddert with the goal of facilitating a better understanding of the climate crisis.<br>
-                                         Sources: <a https://www.climatewatchdata.org/ghg-emissions?end_year=2018&start_year=1990>Climate Watch</a> and <a https://www.iea.org/reports/world-energy-balances-overview>The International Energy Agency</a> Code: <a href="https://github.com/charlie86/covid-testing-us">GitHub</a> <br>
-                      All data are at the country level. Regional, continental, and global figures are manually aggregated by myself.'))
+                                         Sources: <a href="https://www.climatewatchdata.org/ghg-emissions?end_year=2018&start_year=1990">Climate Watch</a> (for total emissions),
+                                         <a href="https://www.iea.org/reports/world-energy-balances-overview">The International Energy Agency</a> (for electricity grid mix),
+                                         <a href="https://ourworldindata.org/emissions-by-sector#annual-greenhouse-gas-emissions-by-sector">CAIT Climate Data Explorer </a> (for sectoral emissions breakdown),
+                                         <a href="https://data.worldbank.org/">World Bank Open Data </a> (for demographic data).<br>
+                                         Code: <a href="https://github.com/zacharygaeddert/global_emissions">GitHub</a>. <br>
+                  <i> Temporary user note: it is still unclear to me why Leaflet is not rendering circle sizes proportionally; e.g., India is smaller than Russia despite having a greater quantity of emissions.'))
   })
 })
 
